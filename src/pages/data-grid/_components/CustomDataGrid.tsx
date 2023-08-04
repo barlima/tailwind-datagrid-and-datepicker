@@ -49,8 +49,6 @@ const defaultData: Invoice[] = [
 
 const columnHelper = createColumnHelper<Invoice>();
 
-let sort: "asc" | "desc" | null = null;
-
 const columns = [
   columnHelper.accessor("number", {
     cell: (info) => (
@@ -103,7 +101,7 @@ const columns = [
 ];
 
 const CustomDataGrid: React.FC = () => {
-  const [data, setData] = React.useState(() => [...defaultData]);
+  const [data, _setData] = React.useState(() => [...defaultData]);
   const rerender = React.useReducer(() => ({}), {})[1];
 
   const table = useReactTable({
