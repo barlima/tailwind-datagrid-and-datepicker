@@ -41,6 +41,7 @@ const CustomDatepickerV2: React.FC = () => {
             className="mx-2 text-blue-400 font-bold"
             onClick={() => {
               setStartDate(new Date("2023-08-01"))
+              // @ts-ignore
               calendarRef.current?.setPreSelection(new Date("2023-08-01"))
             }}
           >
@@ -50,6 +51,7 @@ const CustomDatepickerV2: React.FC = () => {
             className="mx-2 text-blue-400 font-bold"
             onClick={() => {
               setStartDate(new Date("2023-07-07"));
+              // @ts-ignore
               calendarRef.current?.setPreSelection(new Date("2023-07-07"))
             }}
           >
@@ -59,6 +61,7 @@ const CustomDatepickerV2: React.FC = () => {
             className="mx-2 text-blue-400 font-bold"
             onClick={() => {
               setStartDate(new Date("2023-01-07"));
+              // @ts-ignore
               calendarRef.current?.setPreSelection(new Date("2023-01-07"));
             }}
           >
