@@ -6,8 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue[600],
-        background: "#242424",
+        primary: colors.purple[600],
+        background: "#ebecf0",
+        text: "#3f4c5c"
       },
     },
   },

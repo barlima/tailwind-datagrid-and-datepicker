@@ -15,5 +15,5 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  @apply bg-background text-white;
+  @apply bg-background text-text;
 }

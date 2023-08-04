@@ -1,12 +1,12 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import DatepickerPage from "./pages/datepicker";
+import DatepickerPage from "./pages/datepicker/[version]";
 import DataGridPage from "./pages/data-grid";
 
 const router = createBrowserRouter([
   {
-    path: "/datepicker",
+    path: "/datepicker/:version",
     element: <DatepickerPage />,
   },
   {

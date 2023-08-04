@@ -1,0 +1,89 @@
+.react-datepicker__input-container input {
+  @apply w-[280px] py-2 px-4 rounded-sm bg-white border-solid border-[1px] text-text focus:border-blue-400 hover:border-blue-400 outline-none;
+}
+
+.react-datepicker__navigation {
+  @apply hidden;
+}
+
+.react-datepicker {
+  @apply w-[280px] border-none rounded-sm shadow-md;
+}
+
+.react-datepicker__month-container {
+  @apply w-full;
+}
+
+.react-datepicker__header {
+  @apply bg-transparent border-none;
+}
+
+.react-datepicker__header .react-datepicker__current-month {
+  @apply hidden;
+}
+
+.react-datepicker__header__dropdown.react-datepicker__header__dropdown--scroll {
+  @apply flex font-bold text-[14px] mx-2 text-gray-500;
+}
+
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__year-read-view--down-arrow {
+  @apply top-[6px] w-[6px] h-[6px] border-t-[2px] border-r-[2px] border-gray-500;
+}
+
+.react-datepicker__week,
+.react-datepicker__day-names {
+  @apply flex  justify-center;
+}
+
+.react-datepicker__day-name {
+  @apply font-medium text-gray-400 text-[11px];
+}
+
+.react-datepicker__week {
+  @apply bg-gray-300 mx-[18px];
+}
+
+.react-datepicker__day-name {
+  @apply w-[33px] mx-0;
+}
+
+.react-datepicker__day {
+  @apply w-[32px] m-[0.5px] bg-white h-[32px] flex justify-center items-center;
+}
+
+.react-datepicker__day:hover {
+  @apply rounded-none bg-blue-50 border-[2px] border-white text-blue-400 font-bold;
+}
+
+.react-datepicker__month {
+  @apply mb-3;
+}
+
+.react-datepicker__day.react-datepicker__day--selected {
+  @apply rounded-none bg-blue-400 border-[2px] border-white;
+}
+
+.react-datepicker__day.react-datepicker__day--selected:hover {
+  @apply bg-blue-500 text-white;
+}
+
+.react-datepicker__day.react-datepicker__day--outside-month {
+  @apply text-gray-400;
+}
+
+.react-datepicker__day.react-datepicker__day--today:not(
+    .react-datepicker__day--selected
+  ) {
+  @apply rounded-none bg-gray-200 border-[2px] border-white;
+}
+
+.react-datepicker__day.react-datepicker__day--today:not(
+    .react-datepicker__day--selected
+  ):hover {
+  @apply bg-blue-100;
+}
+
+.react-datepicker__children-container {
+  @apply w-full
+}
